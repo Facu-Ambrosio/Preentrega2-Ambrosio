@@ -1,0 +1,89 @@
+.barra_final{
+    justify-content: end;
+}
+.color{
+    background-color: #DD5353;
+}
+.titulo_logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    max-width: 30%;
+}
+body nav div a h2{
+    margin-bottom: 0;
+}
+body nav div #navbarNav ul li a h5{
+    margin-bottom: 0;
+}
+/* mobile y tablet en vertical 375-991 tablet en horizontal 992-1199, desktop 1200px en adelante, con footer cmabiado  */
+
+/* 1 mobile y tablet en vertical*/
+@media screen and (min-width:375px){
+    /* inicio */
+    #grilla_inicio{
+        display: grid;
+        grid-template-areas: 
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "footer";
+        grid-template-rows: 1fr 1fr 1fr auto;
+        gap: 0.25%;
+        padding-top: 1%;
+
+        background-color: #DBC8AC;
+    }
+    #grilla_inicio section img{
+        max-width: 100%;
+    }
+    #grilla_inicio #footer #redes a img{
+        max-width: 12%;
+    }
+    #imagen1{
+        grid-area: imagen1;
+    }
+    #imagen2{
+        grid-area: imagen2;
+    }
+    #imagen3{
+        grid-area: imagen3;
+    }
+    #footer{
+        grid-area: footer;
+        display: flex;
+        background-color: #DD5353;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1%;
+    }
+    #redes #ig{
+        display: flex;
+        justify-content: end;
+    }
+    #redes #fb{
+        display: flex;
+        justify-content: start;
+    }
+    #redes{
+        display: flex;
+        gap: 1%;
+    }
+    /* galeria */
+}
+
+/* 2 tablet en horizontal*/
+@media screen and (min-width:992px){
+    .color_botones{
+        background-color: #EDDBC0;
+    }
+    /* inicio */
+
+    /* galeria */
+}
+/* 3 desktop*/
+@media screen and (min-width:1200px){
+    /* inicio */
+    /* galeria */
+}
