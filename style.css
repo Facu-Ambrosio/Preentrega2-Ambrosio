@@ -9,7 +9,7 @@
     align-items: center;
 }
 .logo{
-    max-width: 30%;
+    max-width: 20%;
 }
 body nav div a h2{
     margin-bottom: 0;
@@ -17,13 +17,17 @@ body nav div a h2{
 body nav div #navbarNav ul li a h5{
     margin-bottom: 0;
 }
-/* mobile y tablet en vertical 375-991 tablet en horizontal 992-1199, desktop 1200px en adelante, con footer cmabiado  */
+body nav div a{
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+#grilla_inicio{
+    display: grid;}
 
 /* 1 mobile y tablet en vertical*/
-@media screen and (min-width:375px){
+@media screen and (min-width:320px){
     /* inicio */
     #grilla_inicio{
-        display: grid;
         grid-template-areas: 
         "imagen1"
         "imagen2"
@@ -32,7 +36,6 @@ body nav div #navbarNav ul li a h5{
         grid-template-rows: 1fr 1fr 1fr auto;
         gap: 0.25%;
         padding-top: 1%;
-
         background-color: #DBC8AC;
     }
     #grilla_inicio section img{
@@ -72,18 +75,74 @@ body nav div #navbarNav ul li a h5{
     }
     /* galeria */
 }
-
-/* 2 tablet en horizontal*/
+/* cambio en la barra de navegacion */
 @media screen and (min-width:992px){
     .color_botones{
         background-color: #EDDBC0;
     }
-    /* inicio */
+}
 
+@media screen and (min-width:1024px){
+    /* inicio */
+    #grilla_inicio{
+        grid-template-areas: 
+        "imagen1 imagen2 imagen3"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        padding-top: 0.5%;
+    }
+    #footer{
+        margin-top: 0.5%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #redes{
+        gap: 0;
+    }
+    #grilla_inicio #footer #derechos{
+        padding-left: 0.5%;
+    }
+    #grilla_inicio #footer #derechos h5{
+        margin-bottom: 0;
+    }
+    #grilla_inicio #footer #redes #ig{
+        display: flex;
+        width: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        justify-content: center;
+    }
+    #grilla_inicio footer #redes #ig img{
+        max-width: 70%;
+    }
+    #grilla_inicio footer #redes #fb{
+        display: flex;
+        width: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        justify-content: center;
+    }
+    #grilla_inicio footer #redes #fb img{
+        max-width: 70%;
+    }
+    #grilla_inicio footer #redes {
+        justify-content: end;
+    }
+    
     /* galeria */
 }
-/* 3 desktop*/
+
 @media screen and (min-width:1200px){
-    /* inicio */
-    /* galeria */
+    .blur{
+        border-radius: 2%;
+        filter: blur(3px);
+        transition: 0.3s;
+    }
+    .blur:hover{
+        border-radius: 0%;
+        filter: blur(0);
+        transition: 0.3s;
+    }
 }
