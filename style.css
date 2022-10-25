@@ -51,9 +51,7 @@ h3{
 }
 
 
-/* 1 mobile y tablet en vertical*/
 @media screen and (min-width:320px){
-    /* inicio */
     #grilla_inicio{
         display:flex;
         flex-direction:column;
@@ -69,14 +67,11 @@ h3{
     #grilla_inicio section img{
         max-width: 98%;
     }
-
-
     .footer{
         display: flex;
         flex-direction: column;
         align-items: center;
         height: auto;
-
     }
     #ig img{
         max-width: 6%;
@@ -90,9 +85,6 @@ h3{
     #derechos h5{
         margin: 0;
     }
-
-
-    /* galeria */
     #grilla_galeria{
         display: flex;
         flex-direction: column;
@@ -108,7 +100,6 @@ h3{
     }
 }
 
-/* cambio en la barra de navegacion */
 @media screen and (min-width:992px){
     .color_botones{
         background-color: #EDDBC0;
@@ -120,9 +111,8 @@ h3{
         max-width: 3%;
     }
 }
-/* 2 tablet en horizontal */
+
 @media screen and (min-width:1024px){
-    /* inicio */
     #grilla_inicio{
         display: flex;
         flex-direction: row;
@@ -133,8 +123,6 @@ h3{
         align-items: center;
         justify-content: space-between;
     }
-
-    /* galeria */
     #grilla_galeria{
         display: grid;
         grid-template-areas: 
@@ -145,7 +133,6 @@ h3{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
-    /* en vez de hacer esto mandarle repeat grid-template-columns y rows */
     #g1{grid-area: g1;}
     #g2{grid-area: g2;}
     #g3{grid-area: g3;}
@@ -161,7 +148,6 @@ h3{
     
 }
 
-
 @media screen and (min-width:1200px){
     #grilla_galeria{
         grid-template-areas: 
@@ -171,7 +157,6 @@ h3{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-
     .containerMio {
         position: relative;
     
